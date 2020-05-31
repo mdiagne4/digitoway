@@ -15,7 +15,6 @@ export class Contact extends Component {
 
 
     handleSubmit(e){
-      console.log("submitted")
       e.preventDefault();
       axios({
         method: "POST", 
@@ -51,9 +50,9 @@ export class Contact extends Component {
                     <div className="col-md-8 col-md-push-1">
                         <div className="row">
                             <div className="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-                            <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST" action>
+                            <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST" >
                                 <div className="form-group">
-                                <input type="text" className="form-control" id="name" value={this.state.name} required minlength="3" onChange={this.onNameChange.bind(this)} placeholder="Nom" />
+                                <input type="text" className="form-control" id="name" value={this.state.name} required minLength="3" onChange={this.onNameChange.bind(this)} placeholder="Nom" />
                                 </div>
                                 <div className="form-group">
                                 <input type="text" className="form-control" id="email" value={this.state.email} required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" onChange={this.onEmailChange.bind(this)} placeholder="Adresse mail" />
@@ -62,7 +61,7 @@ export class Contact extends Component {
                                 <input type="text" className="form-control" id="object" value={this.state.object} onChange={this.onObjectChange.bind(this)}placeholder="Objet" />
                                 </div>
                                 <div className="form-group">
-                                <textarea name id="message" cols={30} rows={7} value={this.state.message} required minlength="10" onChange={this.onMessageChange.bind(this)} className="form-control" placeholder="Message" />
+                                <textarea id="message" cols={30} rows={7} value={this.state.message} required minLength="10" onChange={this.onMessageChange.bind(this)} className="form-control" placeholder="Message" />
                                 </div>
                                 <div className="form-group">
                                 <input type="submit" className="btn btn-primary btn-send-message" defaultValue="Envoyer" />
