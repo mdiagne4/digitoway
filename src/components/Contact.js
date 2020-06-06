@@ -18,7 +18,7 @@ export class Contact extends Component {
       e.preventDefault();
       axios({
         method: "POST", 
-        url:"http://localhost:3002/send", 
+        url:"https://digitoway-mail-server-app.herokuapp.com:3002/send", 
         data:  this.state
       }).then((response)=>{
         if (response.data.status === 'success'){
