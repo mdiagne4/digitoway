@@ -33,7 +33,7 @@ class Services extends Component {
                             </span>
                             <div className="desc">
                             <h3>DevOps</h3>
-                            <p>Faciliter le build d'applications avec les outils Jenkins, Docker, K8s</p>
+                            <p>Faciliter le build d'applications avec les outils Jenkins, Maven, GIT...</p>
                             </div>
                         </div>
                         </div>
