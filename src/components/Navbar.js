@@ -33,7 +33,7 @@ class Navbar extends Component {
                     <p><small>© Copyright © All rights reserved | Designed by DIGITOWAY</small></p>
                     <ul>
                     <li><a href=""><i className="icon-facebook2" /></a></li>
-                    <li><a href=""><i className="icon-twitter2" /></a></li>
+                    <li><a href="https://twitter.com/digitoway/" target="_blank" rel="noopener noreferrer"><i className="icon-twitter2" /></a></li>
                     <li><a href="https://www.linkedin.com/in/mouhamadou-diagne-44469719b/" target="_blank" rel="noopener noreferrer"><i className="icon-linkedin2" /></a></li>
                     </ul>
                 </div>
